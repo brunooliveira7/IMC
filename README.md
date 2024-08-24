@@ -1,7 +1,7 @@
 <h1 align="center"> Cálculo do IMC </h1>
 
 <p align="center">
-O jogo de adivinhar um número é uma atividade divertida e desafiadora que testa a capacidade dos jogadores de adivinhar um número secreto dentro de um intervalo de 0 a 10. Site disponível em: https://brunooliveira7.github.io/Jogo-adivinhar/
+O site cálculo do IMC é uma ferramenta simples para os usuários avaliarem sua saúde corporal. Site disponível em: https://brunooliveira7.github.io/IMC/
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Jogo de adivinhar tem como objetivo principal descobrir qual é o número correto com o menor número possível de tentativas, utilizando pistas e deduções lógicas.
+Ao inserir informações básicas como peso e altura, o site rapidamente calcula o IMC, fornecendo um número que indica se a pessoa está abaixo do peso, no peso ideal, ou acima do peso.
 
 ## 🔖 Layout
 
