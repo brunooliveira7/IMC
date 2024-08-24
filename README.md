@@ -35,7 +35,7 @@ Ao inserir informações básicas como peso e altura, o site rapidamente calcula
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/AKAfb81i3Y6Rb4HAhxvqet/Jogo-Adivinha%C3%A7%C3%A3o-(Copy)?node-id=0-1&m=dev). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/design/H4NvM7XpxlYZlFJu8QdON3/IMC-(Copy)?node-id=6-4&m=dev). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
