@@ -1,4 +1,5 @@
 import { Modal } from "./modal.js";
+import { AlertError } from "./alert-error.js";
 //capturando o formulário como um todo, para implementar as functions posteriormente
 const form = document.querySelector("form");
 //capturando os dados inseridos pelo user
@@ -12,6 +13,15 @@ form.onsubmit = function (event) {
   const weight = inputWeight.value;
   const height = inputHeight.value;
 
+  const showAlertError = notANumber(weight) || notANumber(height);
+
+  if (showAlertError) {
+    AlertError.open();
+    return;
+  }
+
+  AlertError.close();
+
   const result = IMC(weight, height);
   const message = `Seu IMC é de ${result}`;
   //retornos que serão apresentados no modal
@@ -21,4 +31,8 @@ form.onsubmit = function (event) {
 
 function IMC(weight, height) {
   return (weight / (height / 100) ** 2).toFixed(2);
+}
+
+function notANumber(value) {
+  return isNaN(value) || value == "";
 }
