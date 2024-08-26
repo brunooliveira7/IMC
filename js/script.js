@@ -1,5 +1,6 @@
 import { Modal } from "./modal.js";
 import { AlertError } from "./alert-error.js";
+import { IMC, notANumber } from "./utils.js";
 //capturando o formulário como um todo, para implementar as functions posteriormente
 const form = document.querySelector("form");
 //capturando os dados inseridos pelo user
@@ -28,11 +29,3 @@ form.onsubmit = function (event) {
   Modal.message.innerText = message;
   Modal.open();
 };
-
-function IMC(weight, height) {
-  return (weight / (height / 100) ** 2).toFixed(2);
-}
-
-function notANumber(value) {
-  return isNaN(value) || value == "";
-}
