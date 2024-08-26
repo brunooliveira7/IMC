@@ -27,6 +27,14 @@ form.onsubmit = function (event) {
   displayResultMessage(result);
 };
 
+//fecha a janela de erro ao digitar no campo
+inputHeight.oninput = () => {
+  AlertError.close()
+}
+inputWeight.oninput = () => {
+  AlertError.close()
+}
+
 function displayResultMessage(result) {
   const message = `Seu IMC é de ${result}`;
   //retornos que serão apresentados no modal
