@@ -1,6 +1,6 @@
 import { Modal } from "./modal.js";
 import { AlertError } from "./alert-error.js";
-import { IMC, notANumber } from "./utils.js";
+import { calculateIMC, notANumber } from "./utils.js";
 //capturando o formulário como um todo, para implementar as functions posteriormente
 const form = document.querySelector("form");
 //capturando os dados inseridos pelo user
@@ -14,18 +14,22 @@ form.onsubmit = function (event) {
   const weight = inputWeight.value;
   const height = inputHeight.value;
 
-  const showAlertError = notANumber(weight) || notANumber(height);
+  const weightOrHeightIsNotANumber = notANumber(weight) || notANumber(height);
 
-  if (showAlertError) {
+  if (weightOrHeightIsNotANumber) {
     AlertError.open();
     return;
   }
 
   AlertError.close();
 
-  const result = IMC(weight, height);
+  const result = calculateIMC(weight, height);
+  displayResultMessage(result);
+};
+
+function displayResultMessage(result) {
   const message = `Seu IMC é de ${result}`;
   //retornos que serão apresentados no modal
   Modal.message.innerText = message;
   Modal.open();
-};
+}
